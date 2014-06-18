@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 2.8)
-
-project(02-a_simple_Cmake_setup)
+cmake_minimum_required (VERSION 2.6)
+project (Tutorial)
 
 add_executable(Tutorial tutorial.cxx)
 
