@@ -11,4 +11,3 @@ Just test the current source with:
 > ../myInstallation/Tutorial 45 (FROM THE INSTALL DIRECTORY)
 
 > ctest (RUNS ALL TESTS PRESENT)
-> 
