@@ -4,5 +4,5 @@ Just test the current source with:
 > cd myBuild
 > cmake ..
 > make
-> make install
+> make install (NOT POSSIBLE AT THAT STAGE, CHECK IN THE BUILD DIRECTORY FOR EXECUTABLES)
 > ./Tutorial 45

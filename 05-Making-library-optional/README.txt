@@ -2,7 +2,9 @@ Just test the current source with:
 
 > mkdir myBuild
 > cd myBuild
-> cmake ..
+> cmake .. (TO SPECIFY THE INSTALLATION DIRECTORY TO BE THE CURRENT DIRECTORY)
+> cmake -DCMAKE_INSTALL_PREFIX="../myInstallation" .. (TO INSTALL IN A SPECIFIC DIRECTORY)
 > make
+> make VERBOSE=1 (TO SEE ALL STEPS PRINTED TO SCREEN)
 > make install
 > ./Tutorial 45

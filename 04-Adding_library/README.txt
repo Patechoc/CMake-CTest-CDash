@@ -6,5 +6,5 @@ Just test the current source with:
 > cmake -DCMAKE_INSTALL_PREFIX="../myInstallation" .. (TO INSTALL IN A SPECIFIC DIRECTORY)
 > make
 > make VERBOSE=1 (TO SEE ALL STEPS PRINTED TO SCREEN)
-> make install
+> make install (NOT POSSIBLE AT THAT STAGE, CHECK IN THE BUILD DIRECTORY FOR EXECUTABLES)
 > ./Tutorial 45
