@@ -1,0 +1,27 @@
+Installing Boost on Ubuntu with an example of using boost array:
+Install libboost-all-dev and aptitude
+sudo apt-get install libboost-all-dev
+sudo apt-get install aptitude
+aptitude search boost
+
+
+Then paste this into a C++ file called helloWorld_BOOST.cpp:
+
+#include <iostream>
+#include <boost/array.hpp>
+using namespace std;
+int main(){
+  boost::array<int, 4> arr = {{1,2,3,4}};
+  cout << "hi" << arr[0];
+  return 0;
+}
+
+
+Compile like this:
+g++ -o helloBOOST helloWorld_BOOST.cpp
+
+Run it like this:
+./helloBOOST
+
+Program prints:
+hi1
