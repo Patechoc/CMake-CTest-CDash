@@ -9,6 +9,10 @@ set (Tutorial_VERSION_MINOR 0)
 set (CMAKE_ROOT "/usr/share/cmake-2.8")
 include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
 
+# does this system provide the log and exp functions?
+check_function_exists (log HAVE_LOG)
+check_function_exists (exp HAVE_EXP)
+
 
 # configure a header file to pass some of the CMake settings
 # to the source code
@@ -40,10 +44,6 @@ target_link_libraries (Tutorial  ${EXTRA_LIBS})
 install (TARGETS Tutorial DESTINATION bin)
 install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
          DESTINATION include)
-
-# does this system provide the log and exp functions?
-check_function_exists (log HAVE_LOG)
-check_function_exists (exp HAVE_EXP)
 
 ### TESTs
 enable_testing ()
