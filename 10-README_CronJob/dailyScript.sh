@@ -16,5 +16,7 @@ cd myBuild
 cmake -DCMAKE_INSTALL_PREFIX="../myInstallation" ..
 make
 make install
-ctest -D Nightly
-ctest -D Nightly -R Comp
+#ctest -D Nightly
+ctest -D Experimental
+#ctest -D Nightly -R Comp
+rm -rf $DIR_CLONE

@@ -25,7 +25,7 @@ int main (int argc, char *argv[])
 #if defined (HAVE_LOG) && defined (HAVE_EXP)
   result = exp(log(x)*0.5);
   // otherwise use an iterative approach
-#elif USE_MYMATH
+#elsif (USE_MYMATH)
   double outputValue = mysqrt(inputValue);
 #else
   double outputValue = sqrt(inputValue);
